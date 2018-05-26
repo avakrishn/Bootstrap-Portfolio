@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0; 
+      opacity: 0.85; 
+
+        
+    }
+
+
+
+    .navbar-brand{
+        font-size: 28px;
+
+    }
+
+    li{
+        font-size: 16px;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: #8772b5;
+    }
+    
+    .nav.navbar-nav li.active a {
+      background-color:#5F4B8B;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+        height: 800px;
+        margin-top: 70px;
+        margin-bottom: 180px;    
+    }
+
+    #mainImage{
+    width: 160px;
+    height: auto; 
+    border-radius: 9px;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+        color: #5F4B8B;
+        font-weight: bolder;
+    }
+
+     p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        line-height: 200%;
+    }
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #white;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #222222;
+      color: #8772b5;
+      /* position: fixed; */
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      opacity: 0.85;
+      
+    }
+
+    .footer-text{
+        font-size: 12px;
+    }
+
+    .up-arrow{
+        color: #8772b5;
+    }
+
+
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Avanika</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="portfolio.html">Portfolio
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-left">
+                        <li><a href="portfolio.html">Hangman</a></li>
+                        <li><a href="portfolio.html">RPG Game</a></li>
+                        <li><a href="portfolio.html">Trivia Game</a></li>
+                        <li><a href="portfolio.html">Rutgers Info Widget</a></li>
+                        <li><a href="portfolio.html">Rock Paper Scissors</a></li>
+                        </ul>
+                    </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-2"></div>
+    
+    </div>
+
+</nav>
+
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav"></div>
+    <div class="col-sm-8 text-left"> 
+        <div id='mainInfo'>
+            <h2>About Me</h2>
+                <hr id ='middle'>
+                <img id= 'mainImage' src="assets/images/picture.jpg" alt="Picture">
+                
+                <p>Hello! I’m Avanika, a Bay Area native who likes to create art and solve logic puzzles and brain teasers. I’ve always had an interest in art and technology, and so I enjoy being creative in the field of web development.</p>
+                <br>
+                <p>I enjoy creating paintings and ceramics, especially with the pottery wheel. I like the challenge of starting with a fresh block of clay or a new blank file and then methodically molding clay or systematically designing and implementing code to create a unique sculpture or an interactive web development project.</p>
+                <br>
+                <p class='clearFloat'>Whenever I can I like to explore, whether it be the cities near me or countries abroad. Places that I enjoy visiting and would recommend around the Bay Area are Muir Woods, the city of Sausalito, and Treasure Island. If you are traveling in Eastern Europe you must visit Lake Wolfgang in Austria and Český Krumlov in the Czech Republic, both of which have breathtaking views and picturesque towns.</p>
+                <br>
+                <p>Thanks for getting to know a bit about me. If you want to see what I’ve created, check out the web projects in my Portfolio page and get in touch with me through the Contact page!</p>
+        </div>
+    </div>
+    <div class="col-sm-2 sidenav"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+    <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p class= 'footer-text'>Copyright © 2018</p>
+</footer>
+
+
+</body>
+</html>
