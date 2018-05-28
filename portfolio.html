@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  
+
+  <style>
+    
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: #000201;
+    }
+
+    body, html{
+        height: 100%;
+        margin: 0;
+    }
+  
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0; 
+      opacity: 0.87; 
+
+        
+    }
+
+    .navbar-brand{
+        font-size: 28px;
+
+    }
+
+    li{
+        font-size: 18px;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: #bb68eb;
+        letter-spacing: 3px;
+        font-weight: bold;
+       
+    }
+    
+    .nav.navbar-nav li.active a {
+      background-color:#a75cd3;
+    }
+
+    /* .carousel-inner img {
+        margin: auto;
+    } */
+
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+        height: 600px;
+        margin-top: 80px;
+        margin-bottom: 60px;    
+    }
+
+    #mainImage{
+        width: 160px;
+        height: auto; 
+        border-radius: 9px;
+        margin-bottom: 15px;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+        color: #5f5e5e;
+        font-weight: bolder;
+    }
+
+     p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        line-height: 200%;
+        color: #5f5e5e;
+    }
+
+    .middle{
+        height:1.2px;
+        background-color: rgb(168, 59, 182);
+    }
+    
+    /* Set gray background color and 100% height
+    .sidenav {
+      padding-top: 20px;
+      background-color: white;
+      height: 100%;
+    } */
+
+    
+
+    .jumbotron{
+        margin-bottom: 0px;
+    }
+    
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #222222;
+      color: #8772b5;
+      /* position: fixed; */
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      opacity: 0.85;
+      
+    }
+
+    .footer-text{
+        font-size: 12px;
+    }
+
+    .up-arrow{
+        color: #8772b5;
+    }
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  opacity: 0.94;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.bgimg-1 {
+  background-image: url("assets/images/blue-purple-left.jpg");
+  background-color: #000201;
+  min-height: 100%;
+  background-position:left;
+}
+
+h1{
+    margin-top: 30%;
+    font-size: 11vw;
+    color: #00cba7;
+    padding-right: 35%;
+}
+
+.bgimg-2 {
+  background-image: url("assets/images/yellow-purple-left.jpg");
+  background-color: #000201;
+  min-height: 100%;
+  background-position:left;
+}
+
+.bgimg-3 {
+  background-image: url("assets/images/yellow-purple-right.jpg");
+  background-color: #000201;
+  min-height: 100%;
+  background-position:right;
+}
+
+.bgimg-4 {
+  background-image: url("assets/images/blue-purple-right.jpg");
+  background-color: #000201;
+  min-height: 100%;
+  background-position:right;
+}
+
+.bgimg-5 {
+  background-color: #fbf9fc;
+  min-height: 100%;
+}
+
+/* h1{
+    position: absolute;
+    text-align: center;
+    margin-top:40%;
+} */
+
+/* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1023px) {
+        .bgimg-1{
+            background-attachment: scroll;
+            min-height: 40%;
+            background-image: none;
+        }
+        .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+            background-attachment: scroll;
+            min-height: 100%;
+            background-image: none;
+        }
+    }
+
+
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px){
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+
+      /* .bgimg-1{
+        background-attachment: scroll;
+        min-height: 40%;
+        background-image: none;
+    }
+     .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        background-attachment: scroll;
+        min-height: 100%;
+        background-image: none; 
+    }*/
+    }
+
+    @media (max-width: 992px){
+        .bgimg-1{
+            background-attachment: scroll;
+            min-height: 40%;
+            background-image: none;
+        }
+        .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+            background-attachment: scroll;
+            min-height: 100%;
+            background-image: none;
+        }
+        h1{
+            padding-right: 0px;
+        }
+
+    }
+
+    
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="col-md-1"></div>
+        
+        <div class="col-md-10">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar" style="background-color:#bb68eb;"></span>
+                    <span class="icon-bar" style="background-color:#bb68eb;"></span>
+                    <span class="icon-bar" style="background-color:#bb68eb;"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Avanika</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="active nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Projects
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li class="nav-item"><a class="nav-link" href="#">Hangman</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">RPG Game</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Trivia Game</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Rutgers Info Widget</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Rock Paper Scissors</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-1"></div>
+    
+    </div>
+
+</nav>
+
+<div class= "bgimg-1" >
+        <div class= "container-fluid" style="background-color: transparent; padding: 0!important; margin: 0!important; border: 0!important;">
+            <div class= "row content">
+                <div class= "col-md-6"></div>
+
+                <div class="col-md-6 text-center" style="padding-left:0px">
+                        <h1>Portfolio</h1>
+                </div>
+
+            </div>
+        </div>
+    
+</div>
+
+<div class= "bgimg-2" >
+    <div class= "container" style="background-color: transparent; padding: 0!important; margin: 0!important; border: 0!important;">
+    </div>
+</div>
+
+
+<div class= "bgimg-3" >
+    <div class= "container" style="background-color: transparent; padding: 0!important; margin: 0!important; border: 0!important;">
+    </div>
+</div>
+
+<div class= "bgimg-4" >
+    <div class= "container" style="background-color: transparent; padding: 0!important; margin: 0!important; border: 0!important;">
+    </div>
+
+</div>
+
+<div class= "bgimg-5" >
+
+</div>
+
+<!-- 
+
+
+<div class="jumbotron jumbotron-fluid" style="background-color: #000201; opacity: 1; padding-bottom: 0!important;">
+        <div class="container-fluid" style="margin: 0!important;">
+            <div class="row" style="margin: 0!important;">
+                <div class="col-md-5">
+                    <img src="assets/images/blue-purple-left.jpg" width="100%" height="auto" alt="Blue Purple Smoke" style="padding:0!important;" >
+                </div>
+                <div class="col-md-7">
+                    <div class="row text-center">
+                        <h1>Portfolio</h1>
+                    </div>
+                    <hr class="middle">
+                    <div class ="row">
+                        <div class="col-md-6">
+                        </div>
+                        
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                    <div class ="row">
+                        <div class="col-md-6">
+                        </div>
+                        
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                    <div class ="row">
+                        <div class="col-md-6">
+                        </div>
+                        
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+    </div>
+
+
+<div class="container-fluid">    
+    <div class="row content">
+        
+        <div class="col-md-12"> 
+            <div class="container" id='mainInfo'>
+                <div class= "row">
+                    <div class="col-md-12">
+                        <h2>Skills</h2>
+                    </div>
+                </div>
+
+                
+                    <hr class="middle">
+               
+
+                <div class="row">
+                    <div class= "col-md-2">
+                        
+                    </div>
+                    <div class= "col-md-10">
+                    
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                     </div>
+                 </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+ -->
+
+
+
+<footer class="container-fluid text-center">
+    <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p class= 'footer-text'>Copyright © 2018</p>
+</footer>
+
+
+</body>
+</html>
