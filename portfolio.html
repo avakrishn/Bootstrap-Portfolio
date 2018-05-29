@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>About Me</title>
+  <title>Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   
 
   <style>
@@ -22,7 +23,6 @@
         margin: 0;
     }
   
-
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -52,12 +52,6 @@
       background-color:#a75cd3;
     }
 
-    /* .carousel-inner img {
-        margin: auto;
-    } */
-
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {
         height: 600px;
         margin-top: 80px;
@@ -90,21 +84,11 @@
         background-color: rgb(168, 59, 182);
     }
     
-    /* Set gray background color and 100% height
-    .sidenav {
-      padding-top: 20px;
-      background-color: white;
-      height: 100%;
-    } */
-
-    
 
     .jumbotron{
         margin-bottom: 0px;
     }
-    
-    
-    /* Set black background color, white text and some padding */
+
     footer {
       background-color: #222222;
       color: #8772b5;
@@ -113,131 +97,234 @@
       bottom: 0;
       width: 100%;
       opacity: 0.85;
-      
     }
 
     .footer-text{
         font-size: 12px;
+        
     }
 
     .up-arrow{
-        color: #8772b5;
+        color: #a75cd3;
+        font-size: 19px;
     }
 
 
-body, html {
-  height: 100%;
-  margin: 0;
-  color: #777;
-}
+    body, html {
+    height: 100%;
+    margin: 0;
+    color: #777;
+    }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-  position: relative;
-  opacity: 0.94;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: contain;
-  
-}
-.bgimg-1 {
-  background-image: url("assets/images/blue-purple-left.jpg");
-  background-color: #000201;
-  min-height: 100%;
-  background-position:left;
-}
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+    position: relative;
+    opacity: 0.94;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000201;
+    min-height: 100%;
+    
+    }
+    .bgimg-1 {
+    background-image: url("assets/images/blue-purple-left.jpg");
+    background-position:left;
+    }
 
-h1{
-    margin-top: 30%;
-    font-size: 11vw;
-    color: #00cba7;
-    padding-right: 35%;
-}
 
-.bgimg-2 {
-  background-image: url("assets/images/yellow-purple-left.jpg");
-  background-color: #000201;
-  min-height: 100%;
-  background-position:left;
-}
 
-.bgimg-3 {
-  background-image: url("assets/images/yellow-purple-right.jpg");
-  background-color: #000201;
-  min-height: 100%;
-  background-position:right;
-}
+    .bgimg-2 {
+    background-image: url("assets/images/yellow-purple-left.jpg");
+    background-position:left;
+    }
 
-.bgimg-4 {
-  background-image: url("assets/images/blue-purple-right.jpg");
-  background-color: #000201;
-  min-height: 100%;
-  background-position:right;
-}
+    .bgimg-3 {
+    background-image: url("assets/images/yellow-purple-right.jpg");
+    background-position:right;
+    }
 
-.bgimg-5 {
-  background-color: #fbf9fc;
-  min-height: 100%;
-}
+    .bgimg-4 {
+    background-image: url("assets/images/blue-purple-right.jpg");
+    background-position:right;
+    }
 
-/* h1{
-    position: absolute;
-    text-align: center;
-    margin-top:40%;
-} */
+    .bgimg-5 {
+    background-image: url("assets/images/blue-purple-left.jpg");
+    background-position:left;
+    }
 
-/* Turn off parallax scrolling for tablets and phones */
+
+
+    .bgimg-6 {
+    background-image: url("assets/images/yellow-purple-left.jpg");
+    background-position:left;
+    }
+
+    .bgimg-7 {
+    background-color: #fbf9fc;
+    }
+
+    h1{
+        margin-top: 43%;
+        font-size: 10.5vw;
+        color: #00cba7;
+        padding-right: 35%;
+    }
+
+
+    #hangmanImage, #triviaImage {
+        width: 100%;
+        box-shadow: 0 0 0.75vw slategray;
+    }
+
+    #rutgersImage{
+        width: 100%;
+        box-shadow: 0 0 0.7vw whitesmoke;
+    }
+
+    #rpgImage, #scissorsImage {
+        width: 100%;
+        box-shadow: 0 0 1vw whitesmoke;
+    }
+
+    
+
+    #hangman, #rpg, #trivia, #rutgers, #scissors{
+        width: 100%;
+        position: relative;
+    }
+
+    #hangmanText, #rpgText, #triviaText, #rutgersText, #scissorsText{
+        position: absolute;
+        bottom: 4%;
+        width: 100%;
+        text-align: center;
+        background-color: #a75cd3;
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 130%;
+        
+    }
+
+    #hangmanText{
+        background-color: #009e95;
+    }
+
+    #triviaText{
+        background-color: #e86b00;
+    }
+
+
+    .resize{
+        display: none;
+        position: fixed;
+        z-index: 100;
+        right: 3%;
+        bottom: 2%;
+        width: fit-content;
+        font-size: 30px;
+    }
+
+    .popover-content {
+      background-color: #fbf9fc;
+      color: #a75cd3;
+      padding: 7px;
+    }
+    
+    .scroll{
+        display: none;
+        background-color: transparent;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        opacity: 0.7;
+        font-size: 29px;
+        
+    }
+
+   
+    /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1023px) {
         .bgimg-1{
             background-attachment: scroll;
-            min-height: 40%;
+            min-height: 30%;
             background-image: none;
         }
-        .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7  {
             background-attachment: scroll;
             min-height: 100%;
             background-image: none;
         }
+        
     }
-
-
     
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px){
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
+
+    @media screen and (max-width: 800px){
       .row.content {height:auto;} 
 
-      /* .bgimg-1{
-        background-attachment: scroll;
-        min-height: 40%;
-        background-image: none;
-    }
-     .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-        background-attachment: scroll;
-        min-height: 100%;
-        background-image: none; 
-    }*/
+      h1{
+          color: #a75cd3;
+          padding-right: 0px;
+      }
+
     }
 
-    @media (max-width: 992px){
+    @media (max-width: 992px) and (min-device-width: 1024px){
         .bgimg-1{
             background-attachment: scroll;
-            min-height: 40%;
+            min-height: 30%;
             background-image: none;
         }
-        .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
             background-attachment: scroll;
             min-height: 100%;
             background-image: none;
         }
         h1{
             padding-right: 0px;
+            color: #a75cd3;
         }
+
+        .resize{
+            display: block;
+        }
+
 
     }
 
+    @media (min-width: 992px) and (min-device-width: 1024px){
+        .scroll{
+            display: inline-block;
+        }
+    }
+
+
+    @media (max-width: 978px) {
+        .small-device-c {
+        padding: 0;
+        margin:0;
+        }
+
+        .small-device-row {
+        padding:0;
+        }
+
+        
+    }
+    
+    @media (max-width: 1100px){
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+            background-size: 54.5% 100%;
+        }
+    }
+
+    @media screen and (min-width: 2559px){
+        #hangmanText, #rpgText, #triviaText, #rutgersText, #scissorsText{
+            font-size: 190%;
+        }
+
+
+    }
     
   </style>
 </head>
@@ -285,121 +372,150 @@ h1{
 
 </nav>
 
-<div class= "bgimg-1" >
-        <div class= "container-fluid" style="background-color: transparent; padding: 0!important; margin: 0!important; border: 0!important;">
-            <div class= "row content">
+<div class= "bgimg-1 outer" >
+        <div class= "container-fluid" style="background-color: transparent; padding: 0; margin: 0; border: 0;">
+            <div class= "row">
                 <div class= "col-md-6"></div>
 
-                <div class="col-md-6 text-center" style="padding-left:0px">
+                <div class="col-md-6 text-center" style="padding-left:0px; padding-right:0px;">
                         <h1>Portfolio</h1>
                 </div>
-
             </div>
         </div>
     
 </div>
 
+<div class= "resize">
+    <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Expand Window">
+            <i class="fas fa-expand-arrows-alt" style="color: #fbf9fc; text-align: right;"></i>
+    </a>
+</div>
+
+<div class="container text-center scroll">
+    <div class="row">
+        <i class="fas fa-angle-double-down" style="color: #00cba7;"></i> 
+    </div>
+</div>
+
 <div class= "bgimg-2" >
-    <div class= "container" style="background-color: transparent; padding: 0!important; margin: 0!important; border: 0!important;">
+    <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-right: 4%; border: 0 ;">
+        <div class= "row small-device-row" style="margin: 25% 0% 37% 0;">
+            <div class="col-md-7"></div>
+
+            <div class="col-md-5" style="padding-right: 0px;">
+                <div id= 'rutgers'>
+                    <img id='rutgersImage' src="assets/images/rutgers.jpeg"  alt="Rutgers Info Widget">
+                    <p id='rutgersText'>Rutgers Info Widget</p>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 
+
 <div class= "bgimg-3" >
-    <div class= "container" style="background-color: transparent; padding: 0!important; margin: 0!important; border: 0!important;">
+    <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-left: 6%; border: 0;">
+
+        <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
+            <div class="col-md-5" style="padding-left: 0px;">
+                <div id='scissors'>
+                        <img id ='scissorsImage' src="assets/images/scissors.jpeg"  alt="Rock Paper Scissors">
+                            <p id= 'scissorsText'>Rock Paper Scissors</p>
+                </div>
+            
+            </div>
+
+            <div class="col-md-7"></div>
+        </div>
+            
     </div>
 </div>
 
 <div class= "bgimg-4" >
-    <div class= "container" style="background-color: transparent; padding: 0!important; margin: 0!important; border: 0!important;">
-    </div>
-
+        <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-left: 6%; border: 0;">
+    
+            <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
+                <div class="col-md-5" style="padding-left: 0px;">
+                    <div id= 'hangman'>
+                            <img id='hangmanImage' src="assets/images/hangman.jpeg"  alt="Hangman">
+                                <p id= 'hangmanText'>Hangman</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-7"></div>
+            </div>
+                
+        </div>
 </div>
 
 <div class= "bgimg-5" >
-
-</div>
-
-<!-- 
-
-
-<div class="jumbotron jumbotron-fluid" style="background-color: #000201; opacity: 1; padding-bottom: 0!important;">
-        <div class="container-fluid" style="margin: 0!important;">
-            <div class="row" style="margin: 0!important;">
-                <div class="col-md-5">
-                    <img src="assets/images/blue-purple-left.jpg" width="100%" height="auto" alt="Blue Purple Smoke" style="padding:0!important;" >
-                </div>
-                <div class="col-md-7">
-                    <div class="row text-center">
-                        <h1>Portfolio</h1>
-                    </div>
-                    <hr class="middle">
-                    <div class ="row">
-                        <div class="col-md-6">
-                        </div>
-                        
-                        <div class="col-md-6">
-                        </div>
-                    </div>
-                    <div class ="row">
-                        <div class="col-md-6">
-                        </div>
-                        
-                        <div class="col-md-6">
-                        </div>
-                    </div>
-                    <div class ="row">
-                        <div class="col-md-6">
-                        </div>
-                        
-                        <div class="col-md-6">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-right: 4%; border: 0;">
+            <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
+                <div class="col-md-7 "></div>
     
-        </div>
-    </div>
-
-
-<div class="container-fluid">    
-    <div class="row content">
-        
-        <div class="col-md-12"> 
-            <div class="container" id='mainInfo'>
-                <div class= "row">
-                    <div class="col-md-12">
-                        <h2>Skills</h2>
+                <div class="col-md-5 text-center" style="padding-right: 0px;">
+                    <div id= 'rpg'>
+                            <img id='rpgImage' src="assets/images/rpg.jpeg"  alt="RPG Game">
+                                <p id= 'rpgText'>RPG Game</p>
                     </div>
                 </div>
-
-                
-                    <hr class="middle">
-               
-
-                <div class="row">
-                    <div class= "col-md-2">
-                        
-                    </div>
-                    <div class= "col-md-10">
-                    
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                     </div>
-                 </div>
             </div>
         </div>
-       
-    </div>
 </div>
 
- -->
+<div class= "bgimg-6" >
+        <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-right: 4%; border: 0;">
+            <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
+                <div class="col-md-7"></div>
+    
+                <div class="col-md-5" style="padding-right: 0px;">
+                    <div id= 'trivia'>
+                            <img id='triviaImage' src="assets/images/trivia.jpeg"  alt="Trivia Game">
+                                <p id= 'triviaText'>Trivia Game</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class= "bgimg-7">
+    <div class= "container" >
+        <div class= "row text-center">
+            <div class="col-md-12">
+                <h2>Skill Set</h2>
+            </div>
+        </div>
+
+        <hr class="middle">
+        
+        <div class="row text-center" >
+            
+            <div class"col-md-4" style="display: inline-block; margin: 4% 3%;" >
+                <p style="font-size: 20px">HTML</p>
+                <i class="fab fa-html5 fa-10x fa-border" style="border-color:#EA6628; color: #EA6628; background-color: transparent; box-shadow: 0 0 5px #333;"></i>
+            </div>
+            
+
+            <div class"col-md-4" style="display: inline-block; margin: 3% 3%;">
+                <p style="font-size: 20px">CSS</p>
+                <i class="fab fa-css3 fa-10x fa-border" style="border-color:#2e96e6; color: #2e96e6; background-color: transparent; box-shadow: 0 0 5px #333;"></i>
+            </div>
+           
+
+            <div class"col-md-4" style="display: inline-block; margin: 3% 3%;">
+                <p style="font-size: 20px">JavaScript</p>    
+                <i class="fab fa-js-square fa-10x fa-border" style="border-color:#eedf49; color: #eedf49; background-color: transparent; box-shadow: 0 0 4px #333;"></i>
+            </div>
 
 
+        </div>
+
+
+    </div>
+
+</div>
 
 <footer class="container-fluid text-center">
     <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
@@ -408,6 +524,12 @@ h1{
     <p class= 'footer-text'>Copyright © 2018</p>
 </footer>
 
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
 
 </body>
 </html>
