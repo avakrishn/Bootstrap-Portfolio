@@ -12,10 +12,14 @@
   
 
   <style>
+    html {
+        height:100%;
+    }
     
     body{
         font-family: Georgia, 'Times New Roman', Times, serif;
         background-color: #fbf9fc;
+        min-height: 100%;
     }
 
     .navbar {
@@ -47,7 +51,6 @@
     }
     
     .row.content {
-        height: 600px;
         margin-top: 80px;
         margin-bottom: 60px;    
     }
@@ -71,6 +74,12 @@
         font-size: 17px;
         line-height: 200%;
         color: #5f5e5e;
+        margin-left: 0px;
+        
+    }
+
+    .image-text{
+        margin-left: 15px;
     }
 
     .middle{
@@ -101,7 +110,8 @@
     }
 
     .up-arrow{
-        color: #8772b5;
+        color: #a75cd3;
+        font-size: 19px;
     }
 
 
@@ -109,7 +119,25 @@
    
     @media screen and (max-width: 767px) {
       .row.content {height:auto;} 
+
+      .center-picture{
+          width: 100%;
+      }
+
+      .image-text{
+        margin-left: 0px;
     }
+
+
+    }
+
+    /* @media (max-width: 1212px) and (min-width: 992px){
+        .center-picture{
+            margin-right: 10px;
+        }
+
+
+    } */
 
     
   </style>
@@ -174,14 +202,15 @@
                     <hr class="middle">
               
 
-                <div class="row">
-                    <div class= "col-md-2">
+                <div class="row text center">
+                    <div class= "col-md-2 text-center center-picture">
                         <img id= 'mainImage' src="assets/images/picture.jpg" alt="Picture">
                     </div>
+                   
                     <div class= "col-md-10">
-                        <p>Hello! I’m Avanika, a Bay Area native who likes to create art and solve logic puzzles and brain teasers. I’ve always had an interest in art and technology, and so I enjoy being creative in the field of web development.</p>
+                        <p class= "image-text">Hello! I’m Avanika, a Bay Area native who likes to create art and solve logic puzzles and brain teasers. I’ve always had an interest in art and technology, and so I enjoy being creative in the field of web development.</p>
                         <br>
-                        <p>I enjoy creating paintings and ceramics, especially with the pottery wheel. I like the challenge of starting with a fresh block of clay or a new blank file and then methodically molding clay or systematically designing and implementing code to create a unique sculpture or an interactive web development project.</p>
+                        <p class="image-text">I enjoy creating paintings and ceramics, especially with the pottery wheel. I like the challenge of starting with a fresh block of clay or a new blank file and then methodically molding clay or systematically designing and implementing code to create a unique sculpture or an interactive web development project.</p>
                     </div>
                 </div>
 
