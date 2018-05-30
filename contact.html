@@ -26,16 +26,11 @@
     }
 
     .navbar {
-      margin-bottom: 0;
-      border-radius: 0; 
       opacity: 0.87; 
-
-        
     }
 
     .navbar-brand{
         font-size: 28px;
-
     }
 
     li{
@@ -58,23 +53,8 @@
         margin-bottom: 60px;    
     }
 
-    #mainImage{
-        width: 160px;
-        height: auto; 
-        border-radius: 9px;
-        margin-bottom: 15px;
-    }
-
     h2{
         font-size: 30px;
-        color: #5f5e5e;
-        font-weight: bolder;
-    }
-
-     p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
-        line-height: 200%;
         color: #5f5e5e;
     }
 
@@ -82,33 +62,22 @@
         height:1.2px;
         background-color: rgb(168, 59, 182);
     }
-    
-
-    .jumbotron{
-        margin-bottom: 0px;
-    }
-    
-    
-
+   
     footer {
       background-color: #222222;
-      color: #8772b5;
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%;
       opacity: 0.85;
+      padding-top: 10px;
       
     }
 
     .footer-text{
         font-size: 12px;
+        color: #8772b5;
     }
-
-    /* .up-arrow{
-        color: #a75cd3;
-        font-size: 19px;
-    } */
 
     .form-group{
         font-size: 18px;
@@ -120,17 +89,14 @@
     }
 
     ::placeholder{
-
-    color: #cccccc;
-    
+        color: #cccccc;
     }
 
     .btn.btn-default{
         background-color: #a75cd3;
         border: none;
         color: #fbf9fc;
-        padding: 10px 26px;;
-        text-align: center;
+        padding: 10px 26px;
         text-decoration: none;
         display: inline-block;
         font-size: 18px;
@@ -146,28 +112,23 @@
     
    
     @media screen and (max-width: 767px) {
-      .row.content {height:auto;} 
-      .form-group{
-        font-size: 16px;
-    }
+        .row.content {height:auto;} 
+        .form-group{
+            font-size: 16px;
+        }
 
-    .form-control{
-        font-size: 16px;
-    }
-
-    .btn.btn-default{
-        font-size: 16px;
-    }
+        .form-control, .btn.btn-default{
+            font-size: 16px;
+        }
 
     }
 
-    
   </style>
 </head>
 <body>
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top mb-0 rounded-0">
     <div class="container-fluid">
         <div class="col-md-1"></div>
         
@@ -216,7 +177,7 @@
             <div class="container" id='mainInfo'>
                 <div class= "row text-center">
                     <div class="col-md-12">
-                        <h2>Contact</h2>
+                        <h2><b>Contact</b></h2>
                     </div>
                 </div>
 
@@ -238,7 +199,7 @@
                             <textarea class="form-control" rows="7" id="comment"></textarea>
                     </div>
                    
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default text-center">Submit</button>
                 </form>
 
             </div>
@@ -248,9 +209,7 @@
 
 
 <footer class="container-fluid text-center">
-    <!-- <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-    </a> -->
+
     <p class= 'footer-text'>Copyright © 2018</p>
 </footer>
 

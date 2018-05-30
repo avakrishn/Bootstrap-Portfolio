@@ -23,13 +23,8 @@
         margin: 0;
     }
   
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      margin-bottom: 0;
-      border-radius: 0; 
       opacity: 0.87; 
-
-        
     }
 
     .navbar-brand{
@@ -44,32 +39,15 @@
     .navbar-inverse .navbar-brand {
         color: #bb68eb;
         letter-spacing: 3px;
-        font-weight: bold;
-       
     }
     
     .nav.navbar-nav li.active a {
       background-color:#a75cd3;
     }
 
-    .row.content {
-        height: 600px;
-        margin-top: 80px;
-        margin-bottom: 60px;    
-    }
-
-    #mainImage{
-        width: 160px;
-        height: auto; 
-        border-radius: 9px;
-        margin-bottom: 15px;
-    }
-
     h2{
         font-size: 30px;
-        text-align: center;
         color: #5f5e5e;
-        font-weight: bolder;
     }
 
      p{
@@ -85,13 +63,8 @@
     }
     
 
-    .jumbotron{
-        margin-bottom: 0px;
-    }
-
     footer {
       background-color: #222222;
-      color: #8772b5;
       /* position: fixed; */
       left: 0;
       bottom: 0;
@@ -101,6 +74,7 @@
 
     .footer-text{
         font-size: 12px;
+        color: #8772b5;
         
     }
 
@@ -109,31 +83,22 @@
         font-size: 19px;
     }
 
-
-    body, html {
-    height: 100%;
-    margin: 0;
-    color: #777;
-    }
-
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
-    position: relative;
     opacity: 0.94;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #000201;
     min-height: 100%;
-    
+
     }
-    .bgimg-1 {
+
+    .bgimg-1, .bgimg-5 {
     background-image: url("assets/images/blue-purple-left.jpg");
     background-position:left;
     }
 
-
-
-    .bgimg-2 {
+    .bgimg-2, .bgimg-6  {
     background-image: url("assets/images/yellow-purple-left.jpg");
     background-position:left;
     }
@@ -148,20 +113,11 @@
     background-position:right;
     }
 
-    .bgimg-5 {
-    background-image: url("assets/images/blue-purple-left.jpg");
-    background-position:left;
-    }
-
-
-
-    .bgimg-6 {
-    background-image: url("assets/images/yellow-purple-left.jpg");
-    background-position:left;
-    }
 
     .bgimg-7 {
     background-color: #fbf9fc;
+    min-height: 86%;
+    
     }
 
     h1{
@@ -174,20 +130,14 @@
 
     #hangmanImage, #triviaImage {
         width: 100%;
-        box-shadow: 0 0 0.75vw slategray;
+        box-shadow: 0 0 0.3vw slategray;
     }
 
-    #rutgersImage{
+    #rutgersImage, #rpgImage, #scissorsImage{
         width: 100%;
-        box-shadow: 0 0 0.7vw whitesmoke;
+        box-shadow: 0 0 0.5vw whitesmoke;
     }
 
-    #rpgImage, #scissorsImage {
-        width: 100%;
-        box-shadow: 0 0 1vw whitesmoke;
-    }
-
-    
 
     #hangman, #rpg, #trivia, #rutgers, #scissors{
         width: 100%;
@@ -239,7 +189,7 @@
         bottom: 0;
         opacity: 0.7;
         font-size: 29px;
-        
+ 
     }
 
    
@@ -255,7 +205,22 @@
             min-height: 100%;
             background-image: none;
         }
-        
+
+        .resize{
+            display: block;
+        }
+
+
+        .small-device-c{
+            width: 100%;
+            text-align: center;
+        }
+
+        .small-device-row{
+            width: 100%;
+            text-align: center;
+        }
+   
     }
     
 
@@ -269,7 +234,7 @@
 
     }
 
-    @media (max-width: 992px) and (min-device-width: 1024px){
+    @media screen and (max-width: 800px) and (min-device-width: 1023px){
         .bgimg-1{
             background-attachment: scroll;
             min-height: 30%;
@@ -289,17 +254,16 @@
             display: block;
         }
 
-
     }
 
-    @media (min-width: 992px) and (min-device-width: 1024px){
+    @media screen and (min-width: 992px) and (min-device-width: 1024px){
         .scroll{
             display: inline-block;
         }
-    }
+    } 
 
 
-    @media (max-width: 978px) {
+    @media screen and (max-width: 978px) {
         .small-device-c {
         padding: 0;
         margin:0;
@@ -308,8 +272,7 @@
         .small-device-row {
         padding:0;
         }
-
-        
+ 
     }
     
     @media (max-width: 1100px){
@@ -331,7 +294,7 @@
 <body>
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top mb-0 rounded-0">
     <div class="container-fluid">
         <div class="col-md-1"></div>
         
@@ -342,7 +305,7 @@
                     <span class="icon-bar" style="background-color:#bb68eb;"></span>
                     <span class="icon-bar" style="background-color:#bb68eb;"></span>                        
                 </button>
-                <a class="navbar-brand" href="#">Avanika</a>
+                <a class="navbar-brand" href="#"><b>Avanika</b></a>
             </div>
             
             <div class="collapse navbar-collapse" id="myNavbar">
@@ -372,40 +335,41 @@
 
 </nav>
 
-<div class= "bgimg-1 outer" >
-        <div class= "container-fluid" style="background-color: transparent; padding: 0; margin: 0; border: 0;">
-            <div class= "row">
-                <div class= "col-md-6"></div>
+<div class= "container-fluid bgimg-1 position-relative" >
+    <div class= "container-fluid p-0 m-0 b-0" style="background-color: transparent;">
+        <div class= "row">
+            <div class= "col-md-6"></div>
 
-                <div class="col-md-6 text-center" style="padding-left:0px; padding-right:0px;">
-                        <h1>Portfolio</h1>
-                </div>
+            <div class="col-md-6 text-center px-0">
+                    <h1>Portfolio</h1>
             </div>
         </div>
-    
+    </div>
+
+    <div class="container text-center scroll position-relative">
+        <div class="row">
+            <i class="fas fa-angle-double-down" style="color: #00cba7;"></i> 
+        </div>
+    </div>
+
 </div>
 
 <div class= "resize">
     <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Expand Window">
-            <i class="fas fa-expand-arrows-alt" style="color: #fbf9fc; text-align: right;"></i>
+            <i class="fas fa-expand-arrows-alt al float-right" style="color: #fbf9fc;"></i>
     </a>
 </div>
 
-<div class="container text-center scroll">
-    <div class="row">
-        <i class="fas fa-angle-double-down" style="color: #00cba7;"></i> 
-    </div>
-</div>
 
-<div class= "bgimg-2" >
-    <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-right: 4%; border: 0 ;">
+<div class= "container-fluid bgimg-2 position-relative" >
+    <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-right: 3%;">
         <div class= "row small-device-row" style="margin: 25% 0% 37% 0;">
             <div class="col-md-7"></div>
 
-            <div class="col-md-5" style="padding-right: 0px;">
-                <div id= 'rutgers'>
-                    <img id='rutgersImage' src="assets/images/rutgers.jpeg"  alt="Rutgers Info Widget">
-                    <p id='rutgersText'>Rutgers Info Widget</p>
+            <div class="col-md-5 pr-0">
+                <div id= "rutgers">
+                    <img id="rutgersImage" src="assets/images/rutgers.jpeg"  alt="Rutgers Info Widget">
+                    <p id="rutgersText">Rutgers Info Widget</p>
 
                 </div>
             </div>
@@ -415,11 +379,11 @@
 
 
 
-<div class= "bgimg-3" >
-    <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-left: 6%; border: 0;">
+<div class= " container-fluid bgimg-3 position-relative">
+    <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-left: 3%;">
 
         <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
-            <div class="col-md-5" style="padding-left: 0px;">
+            <div class="col-md-5 pl-0">
                 <div id='scissors'>
                         <img id ='scissorsImage' src="assets/images/scissors.jpeg"  alt="Rock Paper Scissors">
                             <p id= 'scissorsText'>Rock Paper Scissors</p>
@@ -433,14 +397,14 @@
     </div>
 </div>
 
-<div class= "bgimg-4" >
-        <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-left: 6%; border: 0;">
+<div class= " container-fluid bgimg-4 position-relative">
+        <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-left: 3%;">
     
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
-                <div class="col-md-5" style="padding-left: 0px;">
+                <div class="col-md-5 pl-0">
                     <div id= 'hangman'>
                             <img id='hangmanImage' src="assets/images/hangman.jpeg"  alt="Hangman">
-                                <p id= 'hangmanText'>Hangman</p>
+                                <p id='hangmanText'>Hangman</p>
                     </div>
                 </div>
     
@@ -450,12 +414,12 @@
         </div>
 </div>
 
-<div class= "bgimg-5" >
-        <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-right: 4%; border: 0;">
+<div class= " container-fluid bgimg-5 position-relative">
+        <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-right: 4%;">
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-7 "></div>
     
-                <div class="col-md-5 text-center" style="padding-right: 0px;">
+                <div class="col-md-5 text-center pr-0">
                     <div id= 'rpg'>
                             <img id='rpgImage' src="assets/images/rpg.jpeg"  alt="RPG Game">
                                 <p id= 'rpgText'>RPG Game</p>
@@ -465,12 +429,12 @@
         </div>
 </div>
 
-<div class= "bgimg-6" >
-        <div class= "container-fluid small-device-c" style="background-color: transparent; padding: 0; margin-right: 4%; border: 0;">
+<div class= " container-fluid bgimg-6 position-relative">
+        <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-right: 4%;">
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-7"></div>
     
-                <div class="col-md-5" style="padding-right: 0px;">
+                <div class="col-md-5 pr-0">
                     <div id= 'trivia'>
                             <img id='triviaImage' src="assets/images/trivia.jpeg"  alt="Trivia Game">
                                 <p id= 'triviaText'>Trivia Game</p>
@@ -480,11 +444,11 @@
         </div>
 </div>
 
-<div class= "bgimg-7">
-    <div class= "container" >
+<div class= " container-fluid bgimg-7 position-relative">
+    <div class= "container">
         <div class= "row text-center">
-            <div class="col-md-12">
-                <h2>Skill Set</h2>
+            <div class="col-md-12 text-center">
+                <h2><b>Skill Set</b></h2>
             </div>
         </div>
 
@@ -492,11 +456,11 @@
         
         <div class="row text-center" >
             
-            <div class"col-md-4" style="display: inline-block; margin: 4% 3%;" >
+            <div class"col-md-4" style="display: inline-block; margin: 3% 3%;" >
                 <p style="font-size: 20px">HTML</p>
                 <i class="fab fa-html5 fa-10x fa-border" style="border-color:#EA6628; color: #EA6628; background-color: transparent; box-shadow: 0 0 5px #333;"></i>
             </div>
-            
+
 
             <div class"col-md-4" style="display: inline-block; margin: 3% 3%;">
                 <p style="font-size: 20px">CSS</p>
@@ -508,10 +472,7 @@
                 <p style="font-size: 20px">JavaScript</p>    
                 <i class="fab fa-js-square fa-10x fa-border" style="border-color:#eedf49; color: #eedf49; background-color: transparent; box-shadow: 0 0 4px #333;"></i>
             </div>
-
-
         </div>
-
 
     </div>
 
