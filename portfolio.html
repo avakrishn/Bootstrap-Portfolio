@@ -29,7 +29,6 @@
 
     .navbar-brand{
         font-size: 28px;
-
     }
 
     li{
@@ -50,7 +49,7 @@
         color: #5f5e5e;
     }
 
-     p{
+    p{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 17px;
         line-height: 200%;
@@ -62,7 +61,6 @@
         background-color: rgb(168, 59, 182);
     }
     
-
     footer {
       background-color: #222222;
       /* position: fixed; */
@@ -84,49 +82,46 @@
     }
 
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
-    opacity: 0.94;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #000201;
-    min-height: 100%;
-
+        opacity: 0.94;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #000201;
+        min-height: 100%;
     }
 
     .bgimg-1, .bgimg-5 {
-    background-image: url("assets/images/blue-purple-left.jpg");
-    background-position:left;
+        background-image: url("assets/images/blue-purple-left.jpg");
+        background-position:left;
     }
 
     .bgimg-2, .bgimg-6  {
-    background-image: url("assets/images/yellow-purple-left.jpg");
-    background-position:left;
+        background-image: url("assets/images/yellow-purple-left.jpg");
+        background-position:left;
     }
 
     .bgimg-3 {
-    background-image: url("assets/images/yellow-purple-right.jpg");
-    background-position:right;
+        background-image: url("assets/images/yellow-purple-right.jpg");
+        background-position:right;
     }
 
     .bgimg-4 {
-    background-image: url("assets/images/blue-purple-right.jpg");
-    background-position:right;
+        background-image: url("assets/images/blue-purple-right.jpg");
+        background-position:right;
     }
 
 
     .bgimg-7 {
-    background-color: #fbf9fc;
-    min-height: 86%;
+        background-color: #fbf9fc;
+        min-height: 86%;
     
     }
 
     h1{
-        margin-top: 43%;
+        margin-top: 25%;
         font-size: 10.5vw;
         color: #00cba7;
-        padding-right: 35%;
     }
-
 
     #hangmanImage, #triviaImage {
         width: 100%;
@@ -137,7 +132,6 @@
         width: 100%;
         box-shadow: 0 0 0.5vw whitesmoke;
     }
-
 
     #hangman, #rpg, #trivia, #rutgers, #scissors{
         width: 100%;
@@ -152,8 +146,7 @@
         background-color: #a75cd3;
         color: #ffffff;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 130%;
-        
+        font-size: 130%;   
     }
 
     #hangmanText{
@@ -197,85 +190,64 @@
     @media only screen and (max-device-width: 1023px) {
         .bgimg-1{
             background-attachment: scroll;
-            min-height: 30%;
+            min-height: 0%;
             background-image: none;
+            padding: 0;
         }
         .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7  {
             background-attachment: scroll;
-            min-height: 100%;
+            min-height: 0%;
             background-image: none;
+            padding: 0;
         }
 
-        .resize{
-            display: block;
+        .small-device-c-r{
+            margin-right: 0%;
         }
 
-
-        .small-device-c{
-            width: 100%;
-            text-align: center;
+        .small-device-c-l{
+            margin-left: 0%;
         }
 
-        .small-device-row{
-            width: 100%;
-            text-align: center;
+        h1{
+          color: #a75cd3;
+          padding-right: 0px;
         }
    
     }
     
 
-    @media screen and (max-width: 800px){
-      .row.content {height:auto;} 
-
-      h1{
-          color: #a75cd3;
-          padding-right: 0px;
-      }
-
-    }
-
-    @media screen and (max-width: 800px) and (min-device-width: 1023px){
-        .bgimg-1{
-            background-attachment: scroll;
-            min-height: 30%;
-            background-image: none;
-        }
-        .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
-            background-attachment: scroll;
-            min-height: 100%;
-            background-image: none;
-        }
-        h1{
-            padding-right: 0px;
-            color: #a75cd3;
-        }
-
+    @media screen and (max-width: 1023px) and (min-device-width: 1023px){
         .resize{
             display: block;
         }
-
     }
 
-    @media screen and (min-width: 992px) and (min-device-width: 1024px){
+    @media screen and (min-device-width: 1023px){
         .scroll{
             display: inline-block;
         }
+
+        h1{
+            float: right;
+            margin-right: 7%;
+        }
+
+        .small-device-c-l{
+            margin-left: 3%;
+        }
+
+        .small-device-c-r{
+            margin-right: 4%;
+        } 
+        
+        .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7{
+            padding: 0;
+        }
     } 
 
-
-    @media screen and (max-width: 978px) {
-        .small-device-c {
-        padding: 0;
-        margin:0;
-        }
-
-        .small-device-row {
-        padding:0;
-        }
- 
-    }
     
-    @media (max-width: 1100px){
+    @media (max-width: 1225px){
         .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
             background-size: 54.5% 100%;
         }
@@ -285,7 +257,6 @@
         #hangmanText, #rpgText, #triviaText, #rutgersText, #scissorsText{
             font-size: 190%;
         }
-
 
     }
     
@@ -338,9 +309,9 @@
 <div class= "container-fluid bgimg-1 position-relative" >
     <div class= "container-fluid p-0 m-0 b-0" style="background-color: transparent;">
         <div class= "row">
-            <div class= "col-md-6"></div>
+            <!-- <div class= "col-md-6"></div> -->
 
-            <div class="col-md-6 text-center px-0">
+            <div class="col-md-12 text-center px-0">
                     <h1>Portfolio</h1>
             </div>
         </div>
@@ -362,8 +333,8 @@
 
 
 <div class= "container-fluid bgimg-2 position-relative" >
-    <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-right: 3%;">
-        <div class= "row small-device-row" style="margin: 25% 0% 37% 0;">
+    <div class= "container-fluid small-device-c-r p-0" style="background-color: transparent;">
+        <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
             <div class="col-md-7"></div>
 
             <div class="col-md-5 pr-0">
@@ -380,7 +351,7 @@
 
 
 <div class= " container-fluid bgimg-3 position-relative">
-    <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-left: 3%;">
+    <div class= "container-fluid small-device-c-l p-0" style="background-color: transparent;">
 
         <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
             <div class="col-md-5 pl-0">
@@ -398,7 +369,7 @@
 </div>
 
 <div class= " container-fluid bgimg-4 position-relative">
-        <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-left: 3%;">
+        <div class= "container-fluid small-device-c-l p-0" style="background-color: transparent;">
     
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-5 pl-0">
@@ -415,7 +386,7 @@
 </div>
 
 <div class= " container-fluid bgimg-5 position-relative">
-        <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-right: 4%;">
+        <div class= "container-fluid small-device-c-r p-0" style="background-color: transparent;">
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-7 "></div>
     
@@ -430,7 +401,7 @@
 </div>
 
 <div class= " container-fluid bgimg-6 position-relative">
-        <div class= "container-fluid small-device-c p-0" style="background-color: transparent; margin-right: 4%;">
+        <div class= "container-fluid small-device-c-r p-0" style="background-color: transparent;">
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-7"></div>
     
