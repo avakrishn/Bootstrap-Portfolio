@@ -136,6 +136,7 @@
     #hangman, #rpg, #trivia, #rutgers, #scissors{
         width: 100%;
         position: relative;
+        cursor: pointer;
     }
 
     #hangmanText, #rpgText, #triviaText, #rutgersText, #scissorsText{
@@ -287,11 +288,11 @@
                         <a class="dropdown-toggle" data-toggle="dropdown">Projects
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-menu-left">
-                            <li class="nav-item"><a class="nav-link" href="#">Hangman</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">RPG Game</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Trivia Game</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Rutgers Info Widget</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Rock Paper Scissors</a></li>
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="https://avakrishn.github.io/word-guess-game/">Hangman</a></li>
+                            <li class="nav-item"><a class="nav-link"  href="#">RPG Game</a></li>
+                            <li class="nav-item"><a class="nav-link"  href="#">Trivia Game</a></li>
+                            <li class="nav-item"><a class="nav-link"  href="#">Rutgers Info Widget</a></li>
+                            <li class="nav-item"><a class="nav-link"  href="#">Rock Paper Scissors</a></li>
                         </ul>
                     </li>
 
@@ -373,7 +374,7 @@
     
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-5 pl-0">
-                    <div id= 'hangman'>
+                    <div id= 'hangman' onclick="window.open('https://avakrishn.github.io/word-guess-game/');">
                             <img id='hangmanImage' src="assets/images/hangman.jpeg"  alt="Hangman">
                                 <p id='hangmanText'>Hangman</p>
                     </div>
@@ -461,6 +462,7 @@
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
 });
+
 </script>
 
 </body>
