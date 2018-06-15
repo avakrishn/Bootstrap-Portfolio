@@ -88,31 +88,32 @@
         background-size: contain;
         background-color: #000201;
         min-height: 100%;
+        z-index: 20;
     }
 
     .bgimg-1, .bgimg-5 {
-        background-image: url("assets/images/blue-purple-left.jpg");
+        background-image: url("assets/images/blue-purple-left.jpg") !important;
         background-position:left;
     }
 
     .bgimg-2, .bgimg-6  {
-        background-image: url("assets/images/yellow-purple-left.jpg");
+        background-image: url("assets/images/yellow-purple-left.jpg") !important;
         background-position:left;
     }
 
     .bgimg-3 {
-        background-image: url("assets/images/yellow-purple-right.jpg");
+        background-image: url("assets/images/yellow-purple-right.jpg") !important; 
         background-position:right;
     }
 
     .bgimg-4 {
-        background-image: url("assets/images/blue-purple-right.jpg");
+        background-image: url("assets/images/blue-purple-right.jpg") !important;
         background-position:right;
     }
 
 
     .bgimg-7 {
-        background-color: #fbf9fc;
+        background-color: #fbf9fc !important;
         min-height: 86%;
     
     }
@@ -125,12 +126,12 @@
 
     #hangmanImage, #triviaImage {
         width: 100%;
-        box-shadow: 0 0 0.3vw slategray;
+        box-shadow: 0 0 0.3vw #708090;
     }
 
     #rutgersImage, #rpgImage, #scissorsImage{
         width: 100%;
-        box-shadow: 0 0 0.5vw whitesmoke;
+        box-shadow: 0 0 0.5vw #f5f5f5;
     }
 
     #hangman, #rpg, #trivia, #rutgers, #scissors{
@@ -162,7 +163,7 @@
     .resize{
         display: none;
         position: fixed;
-        z-index: 100;
+        z-index: 10;
         right: 3%;
         bottom: 2%;
         width: fit-content;
@@ -183,10 +184,11 @@
         bottom: 0;
         opacity: 0.7;
         font-size: 29px;
+        z-index: initial;
  
     }
 
-   
+
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1023px) {
         .bgimg-1{
@@ -226,7 +228,7 @@
 
     @media screen and (min-device-width: 1023px){
         .scroll{
-            display: inline-block;
+            display: block;
         }
 
         h1{
@@ -259,7 +261,7 @@
             font-size: 190%;
         }
 
-    }
+    } 
     
   </style>
 </head>
@@ -318,7 +320,7 @@
         </div>
     </div>
 
-    <div class="container text-center scroll position-relative">
+    <div class="container text-center scroll">
         <div class="row">
             <i class="fas fa-angle-double-down" style="color: #00cba7;"></i> 
         </div>
@@ -326,11 +328,11 @@
 
 </div>
 
-<div class= "resize">
+<!-- <div class= "resize">
     <a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Expand Window">
             <i class="fas fa-expand-arrows-alt al float-right" style="color: #fbf9fc;"></i>
     </a>
-</div>
+</div> -->
 
 
 <div class= "container-fluid bgimg-2 position-relative" >
@@ -351,9 +353,8 @@
 
 
 
-<div class= " container-fluid bgimg-3 position-relative">
+<div class= "container-fluid bgimg-3 position-relative">
     <div class= "container-fluid small-device-c-l p-0" style="background-color: transparent;">
-
         <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
             <div class="col-md-5 pl-0">
                 <div id='scissors'>
@@ -369,9 +370,8 @@
     </div>
 </div>
 
-<div class= " container-fluid bgimg-4 position-relative">
+<div class= "container-fluid bgimg-4 position-relative">
         <div class= "container-fluid small-device-c-l p-0" style="background-color: transparent;">
-    
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-5 pl-0">
                     <div id= 'hangman' onclick="window.open('https://avakrishn.github.io/word-guess-game/');">
@@ -386,7 +386,7 @@
         </div>
 </div>
 
-<div class= " container-fluid bgimg-5 position-relative">
+<div class= "container-fluid bgimg-5 position-relative">
         <div class= "container-fluid small-device-c-r p-0" style="background-color: transparent;">
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-7 "></div>
@@ -401,7 +401,7 @@
         </div>
 </div>
 
-<div class= " container-fluid bgimg-6 position-relative">
+<div class= "container-fluid bgimg-6 position-relative">
         <div class= "container-fluid small-device-c-r p-0" style="background-color: transparent;">
             <div class= "row small-device-row" style="margin: 25% 0 37% 0;">
                 <div class="col-md-7"></div>
@@ -416,7 +416,7 @@
         </div>
 </div>
 
-<div class= " container-fluid bgimg-7 position-relative">
+<div class= "container-fluid bgimg-7 position-relative">
     <div class= "container">
         <div class= "row text-center">
             <div class="col-md-12 text-center">
@@ -460,8 +460,12 @@
 
 <script>
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
+    $('[data-toggle="popover"]').popover(); 
+    $(window).scroll(function(){
+        $('.scroll').hide();
+    });  
 });
+
 
 </script>
 
