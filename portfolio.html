@@ -21,7 +21,7 @@
         height: 100%;
         margin: 0;
     }
-  
+
     .navbar {
       opacity: 0.87; 
     }
@@ -39,6 +39,11 @@
     .nav.navbar-nav li.active a {
       background-color:#a75cd3;
     }
+
+    .projects:hover{
+        cursor: pointer;
+    }
+    
     h2{
         font-size: 30px;
         color: #5f5e5e;
@@ -318,7 +323,7 @@
                         <ul class="dropdown-menu dropdown-menu-left">
                             <li class="nav-item"><a class="nav-link" target="_blank" href="https://avakrishn.github.io/word-guess-game/">Hangman</a></li>
                             <li class="nav-item"><a class="nav-link"  href="#">RPG Game</a></li>
-                            <li class="nav-item"><a class="nav-link"  href="#">Trivia Game</a></li>
+                            <li class="nav-item"><a class="nav-link"  target="_blank" href="https://avakrishn.github.io/TriviaGame/">Trivia Game</a></li>
                             <li class="nav-item"><a class="nav-link"  href="#">Rutgers Info Widget</a></li>
                             <li class="nav-item"><a class="nav-link"  href="#">Rock Paper Scissors</a></li>
                         </ul>
@@ -425,7 +430,7 @@
                 <div class="col-md-7"></div>
     
                 <div class="col-md-5 pr-0">
-                    <div id= 'trivia'>
+                    <div id= 'trivia' onclick="window.open('https://avakrishn.github.io/TriviaGame/');">
                             <img id='triviaImage' src="assets/images/trivia.jpeg"  alt="Trivia Game">
                                 <p id= 'triviaText'>Trivia Game</p>
                     </div>
